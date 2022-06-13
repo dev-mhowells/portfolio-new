@@ -88,7 +88,15 @@ nav {
   display: block;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-section {
+  max-width: 1350px;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -112,6 +120,8 @@ h1 {
   grid-row: 1 / span 2;
   align-self: center;
   justify-self: flex-end;
+  animation: fadeIn 1500ms ease-in-out 500ms;
+  animation-fill-mode: both;
 }
 
 .br {
@@ -120,11 +130,16 @@ h1 {
 }
 
 .main-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   grid-row: 2;
   grid-column: 2;
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
-  width: 80%;
+  width: 70%;
 }
 
 .description-text,
@@ -137,40 +152,50 @@ h1 {
 }
 
 .small-wave {
+  align-self: flex-end;
   height: 40px;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.description-text {
+  margin-left: 10%;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  animation: fadeIn 1000ms ease-in-out 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main-wave,
 .secondary-wave {
   width: 100%;
-  height: auto;
+  height: 25%;
   position: fixed;
   bottom: 0;
   z-index: -999;
 }
 
 .main-wave {
-  height: 170px;
-  /* animation: riseWave ease-out 1300ms;
-  animation-fill-mode: both; */
-}
-
-@keyframes riseWave {
-  /* 0% {
-    height: 170px;
-  } */
-  100% {
-    height: 20%;
-  }
+  height: 25%;
 }
 
 .secondary-wave {
-  height: 120px;
+  height: 15%;
 }
 
 /* projects */
 
 .projects-section {
+  /* max-width: 1350px; */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -178,7 +203,7 @@ h1 {
 }
 
 .project-display {
-  width: 80%;
+  /* width: 90%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,7 +241,7 @@ h1 {
 }
 
 .prj-description-container {
-  width: 400px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -243,6 +268,7 @@ h1 {
 /* about */
 
 .about-section {
+  max-width: 1350px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -265,10 +291,10 @@ h1 {
   margin-bottom: -30em;
   z-index: -9999;
   height: 30em;
-  width: auto;
+  width: 30em;
   position: fixed;
   bottom: 0;
-  right: 100px;
+  right: 10%;
 }
 
 .rise {
@@ -304,10 +330,26 @@ h1 {
 }
 
 .contact-section {
+  max-width: 1350px;
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
-  border: solid red 1px;
-  position: relative;
+  justify-items: center;
+}
+
+.contact-text {
+  width: 80%;
+  grid-column: 1;
+  grid-row: 1;
+  line-height: 1.5em;
+  justify-self: center;
+  align-self: center;
+}
+
+.cv-btn {
+  background: #fec5bb;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
