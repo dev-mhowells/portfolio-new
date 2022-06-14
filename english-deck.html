@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MichaelDHowells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <div class="nav-item-box nav-home">
+            <a href="index.html">
+              home
+            </a>
+          </div>
+          <div class="nav-item-box">
+            <img
+              src="./images/circle-small.png"
+              class="small-circle show-display"
+              alt="small-circle "
+            />
+            <a href="index.html #projects">
+            projects
+            <a>
+          </div>
+          <div class="nav-item-box">
+            <a href="index.html #about">about</a>
+          </div>
+          <div class="nav-item-box">
+            <a href="index.html #contact">
+            contact
+          </a>
+          </div>
+        </nav>
+      </div>
+      <section class="project-main">
+        <h2 id="project-title">English Deck</h2>
+        <h2>Summary</h2>
+        <p>
+          English Deck is as a minimum viable product for an e-learning platform
+          built with React. The goal was to create highly interactive articles for
+          English learners which included flashcards, a quiz, and a section for
+          writing practice and reading submissions from other learners. The
+          information from each of these elements is stored and retrieved from
+          Firebase on the back-end.
+        </p>
+        <div class="screenshot-box">
+        <img src="./images/project1/cap1.JPG" class="large-cap screenshot" alt="project-screeenshot">
+        <img src="./images/project1/mobile/cap2mob.jpg" class="small-cap screenshot" alt="project-screenshot-mobile">
+    </div>
+        <h2>Technology</h2>
+        <p>
+          The entire app is designed to be a reusable article template, and the
+          app itself also contains reusable components. It therefore made sense to
+          create the app with React. Using Firebase was also an obvious choice as
+          it allows for rapid development both in terms of storage and
+          authentication.
+        </p>
+        <div class="screenshot-box">
+        <img src="./images/project1/cap4.JPG" class="large-cap screenshot" alt="project-screeenshot">
+        <img src="./images/project1/mobile/cap4mob.jpg" class="small-cap screenshot" alt="project-screenshot-mobile">
+        </div>
+        <h2>Challenges and Improvements</h2>
+        <p>
+          Organising the information flow between components was tricky and I
+          considered whether I would need to use the Context API in order to avoid
+          prop drilling. Ultimately, this wasn’t necessary and the project mainly
+          relies on the use of props and the useState and useEffect hooks.
+        </p>
+        <p>
+          I would like to come back to the project and use it as an opportunity to
+          learn more about the Firestore data model and NoSQL databases. I think
+          this would also be a good opportunity to incorporate React Router and
+          scale the app into a site which can easily be updated with more
+          interactive articles which follow the same template.
+        </p>
+        <div class="screenshot-box">
+        <img src="./images/project1/cap5.JPG" class="large-cap screenshot" alt="project-screeenshot">
+        <img src="./images/project1/mobile/cap5mob.jpg" class="small-cap screenshot" alt="project-screenshot-mobile">
+        </div>
+        <h2>Lessons Learned</h2>
+        <p>
+          Despite the relatively small scale of the project, the integration of a
+          number of distinct components required considerable thought for
+          organisation. This was especially true in relation to managing the flow
+          of information between parent and child components in React.
+        </p>
+        <p>
+          The project was large enough in scale to allow me to deepen my
+          understanding of React Hooks, and I’m looking forward to working on
+          something which will allow me to work more with other elements of React,
+          such as the Context API and Custom Hooks.
+        </p>
+        <p>
+          Working with React and Firebase was also an excellent chance to practice
+          more with asynchronous JavaScript and introduced a new set of challenges
+          (and a new set of error codes!), which gave me a deeper understanding of
+          asynchronicity, callback functions and promises.
+        </p>
+        <div class="prj-btns-project">
+            <a href="https://github.com/dev-mhowells/english-deck-article/blob/main/README.md"><button class="github-btn">
+              <img src="./images/github-small.png" alt="github logo" />GitHub
+            </button>
+          </a>
+            <a href="https://flashcards-77222.web.app/"><button class="view-live-btn">view live</button></a>
+          </div>
+        </div>
+        <img src="./images/wave-main.png" class="main-wave" alt="main-wave" />
+    <img
+      src="./images/wave-secondary.png"
+      class="secondary-wave"
+      alt="secondary-wave"
+    />
+        <script src="index.js"></script>
+      </section>
+  </body>
+</html>

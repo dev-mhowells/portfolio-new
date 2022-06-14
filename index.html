@@ -22,7 +22,9 @@
             class="small-circle"
             alt="small-circle"
           />
-          <p>home</p>
+          <a href="#home">
+            home
+          </a>
         </div>
         <div class="nav-item-box">
           <img
@@ -30,7 +32,9 @@
             class="small-circle"
             alt="small-circle "
           />
-          <p>projects</p>
+          <a href="#projects">
+          projects
+          <a>
         </div>
         <div class="nav-item-box">
           <img
@@ -38,7 +42,9 @@
             class="small-circle"
             alt="small-circle"
           />
-          <p>about</p>
+
+          <a href="#about">about</a>
+
         </div>
         <div class="nav-item-box">
           <img
@@ -46,12 +52,14 @@
             class="small-circle"
             alt="small-circle"
           />
-          <p>contact</p>
+          <a href="#contact">
+          contact
+        </a>
         </div>
       </nav>
     </div>
     <main id="main">
-      <section class="home-section">
+      <section class="home-section" id="home">
         <img
           src="./images/circle-big.png"
           class="big-circle"
@@ -68,13 +76,28 @@
             class="small-wave"
             alt="small-wave"
           />
-          <p class="description-text">
-            I'm interested in e-learning platforms and the relationship between
-            psychology and technology.
+          <p class="description-text fade1">
+            I'm interested in the relationship between psychology and the web.
+          </p>
+          <img
+          src="./images/circle-small.png"
+          alt="small-circle"
+          class="small-circle-description fade2"
+        />
+          <p class="description-text fade3">
+            I love making interactive apps with React.
+          </p>
+          <img
+          src="./images/circle-small.png"
+          alt="small-circle"
+          class="small-circle-description fade4"
+        />
+          <p class="description-text fade5">
+            I'm currently working on projects related to online learning. 
           </p>
         </div>
       </section>
-      <section class="projects-section">
+      <section class="projects-section" id="projects">
         <div class="project-display">
           <div class="img-placeholder">
             <img
@@ -83,7 +106,7 @@
               alt="project-one-preview"
             />
             <div class="img-text">
-              <a href="project-1.html">View case study</a>
+              <a href="english-deck.html">View case study</a>
             </div>
           </div>
           <div class="prj-description-container">
@@ -103,15 +126,16 @@
               <img src="./images/firebase.png" alt="firebase logo" />
             </div>
             <div class="prj-btns">
-              <button class="github-btn">
+              <a href="https://github.com/dev-mhowells/english-deck-article/blob/main/README.md"><button class="github-btn">
                 <img src="./images/github-small.png" alt="github logo" />GitHub
               </button>
-              <button class="view-live-btn">view live</button>
+            </a>
+              <a href="https://flashcards-77222.web.app/"><button class="view-live-btn">view live</button></a>
             </div>
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="about">
         <h2>Origins</h2>
         <p>
           I started coding because I wanted to program my own psychology
@@ -140,7 +164,7 @@
           so I decided to start working on my own!
         </p>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <h2 class="contact-text">
           I'm currently looking for work, feel free to send me an email or give
           me a call!

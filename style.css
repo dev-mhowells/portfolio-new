@@ -6,6 +6,24 @@ body {
   font-size: 1em;
 }
 
+::-webkit-scrollbar {
+  width: 0.6em;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8e2dc;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aeb3b0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   margin: 0;
@@ -32,9 +50,19 @@ button {
   font-weight: 300;
   font-size: 1em;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d8e2dcb7;
+}
+
+button:active {
+  background: #d8e2dc;
 }
 
 .nav-container {
+  z-index: 100;
   position: fixed;
   top: 0;
   width: 100%;
@@ -44,17 +72,16 @@ button {
 
 nav {
   display: flex;
-  gap: 50px;
   position: fixed;
   left: 50%;
   margin-top: 20px;
 }
 
 .nav-item-box {
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .small-circle {
@@ -96,6 +123,7 @@ main {
 }
 
 .home-section {
+  width: 95%;
   max-width: 1350px;
   height: 100vh;
   display: grid;
@@ -104,7 +132,7 @@ main {
 }
 
 .big-circle {
-  z-index: 100;
+  z-index: 1000;
   grid-column: 1;
   grid-row: 1 / span 2;
   height: 30em;
@@ -129,7 +157,7 @@ h1 {
   padding-top: 0.5em;
 }
 
-.main-description {
+/* .main-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -140,18 +168,44 @@ h1 {
   align-self: flex-start;
   justify-self: center;
   width: 70%;
+} */
+
+.main-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-row: 2;
+  grid-column: 2;
+  align-self: flex-start;
+  justify-self: center;
+  width: 70%;
+  /* gap: -2em; */
+}
+
+.small-circle-description {
+  height: 1em;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  grid-column: 1 / span 2;
+  margin-top: -1em;
+  margin-bottom: -1em;
 }
 
 .description-text,
 .small-wave {
   width: 80%;
-  grid-column: 2;
-  grid-row: 2;
+  /* grid-column: 2; */
+  /* grid-row: 2; */
   align-self: center;
   justify-self: center;
 }
 
 .small-wave {
+  display: none;
+  opacity: 0.7;
   align-self: flex-end;
   height: 40px;
   grid-column: 1 / span 2;
@@ -160,9 +214,29 @@ h1 {
 
 .description-text {
   margin-left: 10%;
-  grid-row: 2;
   grid-column: 1 / span 2;
+  /* animation: fadeIn 1000ms ease-in-out 1.5s;
+  animation-fill-mode: both; */
+}
+
+.fade1 {
   animation: fadeIn 1000ms ease-in-out 1.5s;
+  animation-fill-mode: both;
+}
+.fade2 {
+  animation: fadeIn 1000ms ease-in-out 1750ms;
+  animation-fill-mode: both;
+}
+.fade3 {
+  animation: fadeIn 1000ms ease-in-out 2250ms;
+  animation-fill-mode: both;
+}
+.fade4 {
+  animation: fadeIn 1000ms ease-in-out 2500ms;
+  animation-fill-mode: both;
+}
+.fade5 {
+  animation: fadeIn 1000ms ease-in-out 3000ms;
   animation-fill-mode: both;
 }
 
@@ -173,6 +247,10 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .main-wave,
@@ -353,3 +431,67 @@ h1 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
+
+/* ENGLISH DECK */
+
+.project-main {
+  margin-top: 100px;
+  /* margin-bottom: 100px; */
+  /* margin-right: 15%;
+  margin-left: 15%; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project-main p {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.project-main h2 {
+  margin-left: 15%;
+}
+
+#project-title {
+  align-self: center;
+  margin-left: 0;
+}
+
+.screenshot-box {
+  width: 100%;
+  height: 35em;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  background-color: #d8e2dc;
+}
+
+.screenshot {
+  height: 25em;
+  width: auto;
+  align-self: center;
+  border-radius: 0.5em;
+}
+
+.prj-btns-project {
+  width: 100%;
+  height: 5em;
+  margin-bottom: 4em;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .project-main .main-wave {
+  height: 20%;
+}
+
+.project-main .secondary-wave {
+  height: 12%;
+} */
