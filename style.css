@@ -495,3 +495,19 @@ html {
 .project-main .secondary-wave {
   height: 12%;
 } */
+
+@media all and (max-width: 600px) {
+  body {
+    font-size: 0.7em;
+  }
+  nav {
+    width: 100%;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .big-circle {
+    height: 30%;
+    width: auto;
+  }
+}
