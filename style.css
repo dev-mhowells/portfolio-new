@@ -671,6 +671,11 @@ html {
   .screenshot {
     height: 20em;
   }
+
+  .wide-cap {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media all and (max-width: 600px) {
