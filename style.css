@@ -559,12 +559,12 @@ html {
 }
 
 .project-main p {
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .project-main h2 {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 #project-title {
@@ -631,12 +631,6 @@ html {
     justify-content: center;
   }
 
-  /* .nav-item-box a {
-    align-self: flex-end;
-    justify-self: flex-end;
-    text-align: center;
-  } */
-
   .about-section p {
     width: 80%;
     margin-bottom: 20px;
@@ -665,6 +659,17 @@ html {
     height: 25em;
     width: 25em;
     margin-bottom: -25em;
+  }
+
+  .screenshot-box {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .screenshot {
+    height: 20em;
   }
 }
 
