@@ -192,7 +192,7 @@ h1 {
     width: 100%;
     margin-top: 80px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
   }
 
   .big-circle {
@@ -204,6 +204,7 @@ h1 {
   }
 
   .main-description {
+    margin-top: 10%;
     grid-column: 1 / span 2;
     grid-row: 2;
   }
@@ -628,7 +629,38 @@ html {
     justify-self: flex-end;
     text-align: center;
   }
+
+  .about-section p {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about-section h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: flex-start;
+  }
+
+  .contact-section {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-text {
+    justify-self: flex-start;
+    margin-bottom: 100px;
+  }
+
+  .rising-circle {
+    height: 25em;
+    width: 25em;
+    margin-bottom: -25em;
+  }
 }
+
 @media all and (max-width: 600px) {
   .main-wave {
     height: 15%;
