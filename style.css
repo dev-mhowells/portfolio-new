@@ -1,4 +1,5 @@
 body {
+  /* height: 100vh; */
   margin: 0;
   background-color: #f8edeb;
   font-family: "Poppins", sans-serif;
@@ -184,6 +185,8 @@ h1 {
   }
 
   .home-section {
+    /* height: 90%; */
+    /* height: 500px; */
     width: 100%;
     margin-top: 80px;
     grid-template-columns: 1fr 1fr;
@@ -276,7 +279,7 @@ html {
 .main-wave,
 .secondary-wave {
   width: 100%;
-  height: 25%;
+  /* height: 25%; */
   position: fixed;
   bottom: 0;
   z-index: -999;
@@ -554,7 +557,8 @@ html {
 
   .nav-container {
     max-width: 100%;
-    height: 70px;
+    /* height: 70px; */
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,5 +568,14 @@ html {
     left: auto;
     align-items: center;
     justify-content: center;
+  }
+}
+@media all and (max-width: 600px) {
+  .main-wave {
+    height: 15%;
+  }
+
+  .secondary-wave {
+    height: 10%;
   }
 }
