@@ -17,7 +17,7 @@ function removeCircles() {
 
 const options = {
   root: null,
-  threshold: 0.5,
+  threshold: 0.4,
 };
 
 const sectionObserver = new IntersectionObserver(function (entries, observer) {

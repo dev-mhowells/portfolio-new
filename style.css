@@ -316,9 +316,9 @@ html {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
   gap: 5%;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 
 .prj-about-top {
@@ -330,11 +330,12 @@ html {
 }
 
 .prj-about-bottom {
+  gap: 20px;
   grid-column: 2;
   grid-row: 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .img-placeholder {
@@ -350,12 +351,13 @@ html {
 /* odd variant just switches from left to right */
 
 .project-display-odd {
+  margin-top: 82px;
   width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 0.5fr;
   gap: 5%;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 
 .prj-about-top-odd {
@@ -371,17 +373,19 @@ html {
   grid-row: 2;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   /* justify-content: space-around; */
 }
 
 .img-placeholder-odd {
   grid-column: 2;
-  /* grid-row: 1 / span 2; */
+  grid-row: 1 / span 2;
   width: 522px;
   /* border: 2px solid #d8e2dc;
   border-radius: 1em;
   display: flex;
   flex-direction: column; */
+  display: flex;
 }
 
 .img-text-container-msg {
@@ -389,6 +393,8 @@ html {
   border-radius: 1em;
   display: flex;
   flex-direction: column;
+  justify-self: center;
+  align-self: flex-end;
 }
 
 .prj1-preview {
@@ -584,6 +590,7 @@ html {
 }
 
 .contact-section {
+  gap: 10%;
   width: 100%;
   max-width: 1350px;
   height: 100vh;
@@ -595,12 +602,20 @@ html {
 }
 
 .contact-text {
-  width: 80%;
+  /* width: 80%;
   grid-column: 1;
-  grid-row: 1;
-  line-height: 1.5em;
-  justify-self: center;
+  grid-row: 1; */
+  /* line-height: 1.5em; */
+  /* display: flex;
+  flex-direction: column;
+  gap: 10%; */
+  justify-self: start;
   align-self: center;
+  /* margin-bottom: 20%; */
+}
+
+.contact-text h2 {
+  margin-bottom: 10%;
 }
 
 .cv-btn {
