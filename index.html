@@ -98,8 +98,50 @@
         </div>
       </section>
       <section class="projects-section" id="projects">
+        <div class="project-display-odd">
+            <div class="prj-about-top-odd">
+            <h2>Messenger for language learners</h2>
+            <p>
+              Allows teachers to correct messages from students. Students can also easily call attention to words they don’t know. Teachers can then provide synonyms, examples and pronunciation for these words through text and audio. 
+            </p>
+            <p>
+              Made with: HTML, CSS, Tailwind, JavaScript, React and Firebase.
+            </p>
+          </div>
+          <div class="img-placeholder-odd">
+            <div class="img-text-container-msg">
+            <img
+              class="prj1-preview"
+              src="./images/project2/demo.JPG"
+              alt="project-one-preview"
+            />
+            <div class="img-text">
+              <a href="english-deck.html">View case study</a>
+            </div>
+          </div>
+          </div>
+          <!-- <div class="logo-container-msg">
+            <img class="html-logo logo" src="./images/html.png" alt="html logo" />
+            <img class="logo" src="./images/css.png" alt="css logo" />
+            <img class="logo" src="./images/tailwind.png" alt="tailwind logo" />
+            <img class="logo" src="./images/js.png" alt="js logo" />
+            <img class="logo" src="./images/react.png" alt="react logo" />
+            <img class="logo" src="./images/firebase.png" alt="firebase logo" />
+          </div> -->
+          <div class="prj-about-bottom-odd">
+            <div class="prj-btns-msg">
+              <a href="https://github.com/dev-mhowells/messaging-app"><button class="github-btn">
+                <img class="github-logo" src="./images/github-small.png" alt="github logo" />GitHub
+              </button>
+            </a>
+              <a href="https://messenger-32231.web.app/"><button class="view-live-btn">view live</button></a>
+            </div>
+          </div>
+
+        </div>
         <div class="project-display">
           <div class="img-placeholder">
+            <div class="img-text-container-msg">
             <img
               class="prj1-preview"
               src="./images/project1/cap1.JPG"
@@ -109,25 +151,24 @@
               <a href="english-deck.html">View case study</a>
             </div>
           </div>
-          <!-- <div class="prj-description-container"> -->
+          </div>
             <div class="prj-about-top">
             <h2>English Deck</h2>
             <p>
-              Minimum viable product for an e-learning platform for English
-              language learners.
+             An article with built in flashcards, a quiz, and comment section. Flashcards can be flipped, cycled through and saved for review. A quiz at the end checks article comprehension. Readers can log in and practice using key words in the comment section, which checks off these words as they are typed by the user.
             </p>
           </div>
           <div class="prj-about-bottom">
             <p>
               Made with: HTML, CSS, JavaScript, React and Firebase.
             </p>
-            <div class="logo-container">
+            <!-- <div class="logo-container">
               <img class="html-logo logo" src="./images/html.png" alt="html logo" />
               <img class="logo" src="./images/css.png" alt="css logo" />
               <img class="logo" src="./images/js.png" alt="js logo" />
               <img class="logo" src="./images/react.png" alt="react logo" />
               <img class="logo" src="./images/firebase.png" alt="firebase logo" />
-            </div>
+            </div> -->
             <div class="prj-btns">
               <a href="https://github.com/dev-mhowells/english-deck-article/blob/main/README.md"><button class="github-btn">
                 <img class="github-logo" src="./images/github-small.png" alt="github logo" />GitHub
@@ -140,7 +181,7 @@
         </div>
       </section>
       <section class="about-section" id="about">
-        <h2>Origins</h2>
+        <h2>Beginnings</h2>
         <p>
           I started coding because I wanted to program my own psychology
           experiments for academic research. By the time I had met my goal of
@@ -157,7 +198,7 @@
           relationship between psychology and technology, and I’m currently
           learning more about the role of psychology in UX design.
         </p>
-        <h2>Online-learning</h2>
+        <h2>Online learning</h2>
         <p>
           As an ex English language teacher and a fan of self-directed learning,
           I love e-learning platforms. I speak conversational Korean, in part
@@ -169,11 +210,34 @@
         </p>
       </section>
       <section class="contact-section" id="contact">
-        <h2 class="contact-text">
+        <form class="form">
+          <div class="form-element1">
+            <label for="first-name">*first name</label>
+            <input type="text" name="first-name" class="first-name" required>
+          </div>
+          <div class="form-element2">
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" class="last-name">
+          </div>
+          <div class="form-element3">
+            <label for="email">*email</label>
+            <input type="email" name="email" class="email">
+          </div>
+          <div class="form-element4">
+            <label for="phone-number">phone number</label>
+            <input type="tel" class="phone-number" name="phone-number">
+          </div>
+          <div class="form-element5">
+            <label for="message">*message</label>
+            <textarea name="message" class="message" required></textarea>  
+          </div>
+          <button type="submit" class="submit">submit</button>
+        </form>
+        <!-- <h2 class="contact-text">
           I'm currently looking for work, feel free to send me an email or give
           me a call!
         </h2>
-        <button class="cv-btn">download CV</button>
+        <button class="cv-btn">download CV</button> -->
         <!-- <div class="new-background"></div> -->
         <!-- <img class="alien-big" src="./images/alien-big.png" alt="alien" /> -->
         
