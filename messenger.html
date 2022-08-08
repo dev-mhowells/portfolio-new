@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MichaelDHowells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <div class="nav-item-box nav-home">
+            <a href="index.html">
+              home
+            </a>
+          </div>
+          <div class="nav-item-box">
+            <img
+              src="./images/circle-small.png"
+              class="small-circle show-display"
+              alt="small-circle "
+            />
+            <a href="index.html #projects">
+            projects
+            <a>
+          </div>
+          <div class="nav-item-box">
+            <a href="index.html #about">about</a>
+          </div>
+          <div class="nav-item-box">
+            <a href="index.html #contact">
+            contact
+          </a>
+          </div>
+        </nav>
+      </div>
+      <section class="project-main">
+        <h2 id="project-title">English Deck</h2>
+        <h2>Summary</h2>
+        <p>
+            With more and more learning taking place online, I wanted to create a way for language learners to have conversations with teachers online through a messenger which was specifically designed to enable corrections and learning opportunities which could be seamlessly integrated into the conversation. 
+        </p>
+        <div class="screenshot-box">
+        <img src="./images/project2/demo-message-correction.png" class="large-cap screenshot" alt="project-screeenshot">
+        <img src="./images/project2/demo-selected.JPG" class="small-cap screenshot" alt="project-screenshot-mobile">
+    </div>
+        <h2>Technology</h2>
+        <p>
+            I chose to use Tailwind primarily with the aim of spending less time on the design process and responsiveness in order to prioritise time spent on the functionality of the app. React was used because of the number of reusable components there would be in the app, from dynamically created tab components, to the messages themselves. Firebase was used on the back-end as the project required authentication, a database, as well as storage for audio files. Firebase allowed for easy integration of all these features, as well as hosting. 
+        </p>
+        <div class="screenshot-box">
+        <img src="./images/project2/demo-correction.JPG" class="large-cap screenshot wide-cap" alt="project-screeenshot">
+        <img src="./images/project2/demo-correction-mob.JPG" class="small-cap screenshot" alt="project-screenshot-mobile">
+        </div>
+        <h2>Challenges and Improvements</h2>
+        <p>
+            One of the biggest challenges I had with this project was working with audio. One such challenge was in regard to appending audio to messages which had already been created and rendered in the messenger. Ultimately the solution was simply to store the audio files in folders which served as references to individual messages. I did however encounter some stumbling blocks related to audio blobs and audio URLs which took longer than they should have to resolve.  Sometimes it is easy to get caught up in the enthusiasm to just get things to work, where in fact it is often a better use of time to take a step back and learn a little more about the technology you are using before getting started with it. 
+        </p>
+        <p>
+            I consider the application very much a work in progress and I intend to keep coming back to it to make improvements and add new features. Firstly, my solution to dynamically creating tabbed components does not use dynamic routing, which I’m now quite sure would be a better way of implementing such a feature. In terms of UX, clicking elsewhere in the messenger should deselect previously selected messages, and student users should receive clear feedback that words they have selected have been highlighted for the teacher. There are also a number of other features which I feel would benefit the application, but for now will be focussing on polishing it up and getting some feedback from potential users.
+        </p>
+        <h2>Lessons Learned</h2>
+        <p>
+            This project has further highlighted to me the importance of organisation and planning ahead where possible. This may be especially true of React apps where consideration must be given to the flow of information between components. No doubt being able to adapt to the evolution of a project is an important skill, but looking back on the project, I feel as though I could have saved quite a lot of time if I had started with a clearer vision of exactly how the project should have been organised. 
+        </p>
+        <div class="prj-btns-project">
+            <a href="https://github.com/dev-mhowells/messaging-app"><button class="github-btn">
+              <img class="github-logo" src="./images/github-small.png" alt="github logo" />GitHub
+            </button>
+          </a>
+            <a href="https://messenger-32231.web.app/"><button class="view-live-btn">view live</button></a>
+          </div>
+        </div>
+        <img src="./images/wave-main.png" class="main-wave" alt="main-wave" />
+    <img
+      src="./images/wave-secondary.png"
+      class="secondary-wave"
+      alt="secondary-wave"
+    />
+        <script src="index.js"></script>
+      </section>
+  </body>
+</html>
